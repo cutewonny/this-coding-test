@@ -1,10 +1,11 @@
-package greedy;
+package greedy.q2;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class BigNumberRule {
     public static void main(String[] args) {
+        System.out.println("N(배열의 크기), M(숫자가 더해지는 횟수), K(연속해서 올 수 있는 횟수)를 공백을 기준으로 구분하여 입력 받기>>>");
 
         Scanner sc = new Scanner(System.in);
 
@@ -17,6 +18,7 @@ public class BigNumberRule {
 
 
 
+        System.out.println("N크기의 배열 값 입력 받기>>>");
         for(int i=0; i<n; i++){
             arr[i] = sc.nextInt();
         }
@@ -31,7 +33,8 @@ public class BigNumberRule {
 
         int result =0;
 
-        while(m>1){
+        while(m>=1){
+            System.out.println("m>> "+m);
             for(int i=0; i<k; i++){
                 if(m==0){
                     break;
@@ -42,13 +45,13 @@ public class BigNumberRule {
 
             if (m==0){
                 break;
+            }else{
+                result+=sencond;
+                m--;
             }
-
-            result+=sencond;
-            m--;
         }
 
-        System.out.println("result>>>>> "+result);
+        System.out.println("최대 값은>>>>> "+result);
 
     }
 }

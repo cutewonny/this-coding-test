@@ -1,8 +1,8 @@
-package greedy;
+package greedy.q3;
 
 import java.util.Arrays;
 
-public class NumCardGameTest {
+public class MaxMin {
 
     //자바에서 최소 최대값 구하는 방법
     //1. List + 스트림
