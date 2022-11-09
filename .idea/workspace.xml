@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1022c8-2d80-4cfb-9b7a-f999c93f6bcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/material/q2/HourMinuteSecond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/material/q2/RoyalNight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFS/EscapeFromMaze.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DFS/FreezingDrinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/material/q3/game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/programmers/Parallel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/material/q2/HourMinuteSecond.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/material/q2/HourMinuteSecond.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +61,39 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.HourMinuteSecond">
+  <component name="RunManager" selected="Application.FreezingDrinks">
+    <configuration name="FreezingDrinks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS.FreezingDrinks" />
+      <module name="this-coding-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HourMinuteSecond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="material.q2.HourMinuteSecond" />
       <module name="this-coding-test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="material.q2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Parallel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programmers.Parallel" />
+      <module name="this-coding-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="programmers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,38 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="arrayValueAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="greedy.q3.arrayValueAdd" />
+    <configuration name="game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="material.q3.game" />
       <module name="this-coding-test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="greedy.q3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="greedy.q2.BigNumberRule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="greedy.q2.BigNumberRule" />
-      <module name="this-coding-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="greedy.q2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="greedy.q3.NumCardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="greedy.q3.NumCardGame" />
-      <module name="this-coding-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="greedy.q3.*" />
+          <option name="PATTERN" value="material.q3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FreezingDrinks" />
+        <item itemvalue="Application.Parallel" />
+        <item itemvalue="Application.game" />
         <item itemvalue="Application.HourMinuteSecond" />
         <item itemvalue="Application.UDLR" />
-        <item itemvalue="Application.arrayValueAdd" />
-        <item itemvalue="Application.greedy.q3.NumCardGame" />
-        <item itemvalue="Application.greedy.q2.BigNumberRule" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +150,9 @@
       <workItem from="1666412591084" duration="329000" />
       <workItem from="1666412932974" duration="9183000" />
       <workItem from="1666795478924" duration="4971000" />
-      <workItem from="1667221239183" duration="5383000" />
+      <workItem from="1667221239183" duration="12879000" />
+      <workItem from="1667532278237" duration="4040000" />
+      <workItem from="1667829447277" duration="6201000" />
     </task>
     <servers />
   </component>
