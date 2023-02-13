@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1022c8-2d80-4cfb-9b7a-f999c93f6bcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/binarySearch/FindValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/binarySearch/FindValue2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/Replace2arraysOfElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/UpAndDown.java" afterDir="false" />
+    <list default="true" id="4d1022c8-2d80-4cfb-9b7a-f999c93f6bcf" name="Changes" comment="binary search -&gt; 재귀함수">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BFS/EscapeFromMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/EscapeFromMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFS/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/DesertIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/DesertIsland.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DFS/FreezingDrinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/FreezingDrinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/makingOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/makingOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/CookTteokbokki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarySearch/CookTteokbokki.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/binarySearch/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarySearch/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +57,12 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.48045978&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -67,9 +70,9 @@
       <recent name="binarySearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FindValue2">
-    <configuration name="FindValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binarySearch.FindValue" />
+  <component name="RunManager" selected="Application.EscapeFromMaze">
+    <configuration name="CookTteokbokki" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binarySearch.CookTteokbokki" />
       <module name="this-coding-test" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +84,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindValue2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="binarySearch.FindValue2" />
+    <configuration name="DesertIsland" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS.DesertIsland" />
+      <module name="this-coding-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EscapeFromMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BFS.EscapeFromMaze" />
+      <module name="this-coding-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FreezingDrinks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DFS.FreezingDrinks" />
+      <module name="this-coding-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="binarySearch.test" />
       <module name="this-coding-test" />
       <extension name="coverage">
         <pattern>
@@ -90,50 +132,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Replace2arraysOfElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.Replace2arraysOfElements" />
-      <module name="this-coding-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.Student" />
-      <module name="this-coding-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="sorting.UpAndDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.UpAndDown" />
-      <module name="this-coding-test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FindValue2" />
-        <item itemvalue="Application.FindValue" />
-        <item itemvalue="Application.Replace2arraysOfElements" />
-        <item itemvalue="Application.Student" />
-        <item itemvalue="Application.sorting.UpAndDown" />
+        <item itemvalue="Application.EscapeFromMaze" />
+        <item itemvalue="Application.DesertIsland" />
+        <item itemvalue="Application.FreezingDrinks" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.CookTteokbokki" />
       </list>
     </recent_temporary>
   </component>
@@ -158,8 +167,24 @@
       <workItem from="1668738348190" duration="240000" />
       <workItem from="1668845911069" duration="10921000" />
       <workItem from="1669340177689" duration="649000" />
-      <workItem from="1669362494331" duration="6261000" />
+      <workItem from="1669362494331" duration="7411000" />
+      <workItem from="1669520804288" duration="692000" />
+      <workItem from="1669727539325" duration="5889000" />
+      <workItem from="1669780896292" duration="562000" />
+      <workItem from="1669795390795" duration="1241000" />
+      <workItem from="1669899760812" duration="4479000" />
+      <workItem from="1670381321982" duration="29000" />
+      <workItem from="1675680398877" duration="13210000" />
+      <workItem from="1676284316209" duration="3729000" />
     </task>
+    <task id="LOCAL-00001" summary="binary search -&gt; 재귀함수">
+      <created>1669387570058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669387570058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,5 +203,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="binary search -&gt; 재귀함수" />
+    <option name="LAST_COMMIT_MESSAGE" value="binary search -&gt; 재귀함수" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BFS/EscapeFromMaze.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BFS/EscapeFromMaze.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
