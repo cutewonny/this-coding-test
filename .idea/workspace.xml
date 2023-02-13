@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4d1022c8-2d80-4cfb-9b7a-f999c93f6bcf" name="Changes" comment="binary search -&gt; 재귀함수">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BFS/EscapeFromMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/EscapeFromMaze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BFS/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/DFS/DesertIsland$Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/DFS/DesertIsland$Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/this-coding-test/DFS/DesertIsland.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/this-coding-test/DFS/DesertIsland.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DFS/DesertIsland.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/DesertIsland.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DFS/FreezingDrinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DFS/FreezingDrinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicProgramming/makingOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicProgramming/makingOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/CookTteokbokki.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarySearch/CookTteokbokki.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/binarySearch/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/binarySearch/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
       <recent name="binarySearch" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EscapeFromMaze">
+  <component name="RunManager" selected="Application.DesertIsland">
     <configuration name="CookTteokbokki" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="binarySearch.CookTteokbokki" />
       <module name="this-coding-test" />
@@ -138,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EscapeFromMaze" />
         <item itemvalue="Application.DesertIsland" />
+        <item itemvalue="Application.EscapeFromMaze" />
         <item itemvalue="Application.FreezingDrinks" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.CookTteokbokki" />
@@ -175,7 +170,7 @@
       <workItem from="1669899760812" duration="4479000" />
       <workItem from="1670381321982" duration="29000" />
       <workItem from="1675680398877" duration="13210000" />
-      <workItem from="1676284316209" duration="3729000" />
+      <workItem from="1676284316209" duration="7761000" />
     </task>
     <task id="LOCAL-00001" summary="binary search -&gt; 재귀함수">
       <created>1669387570058</created>
@@ -184,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669387570058</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="binary search -&gt; 재귀함수">
+      <created>1676288143629</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676288143630</updated>
+    </task>
+    <task id="LOCAL-00003" summary="binary search -&gt; 재귀함수">
+      <created>1676288156892</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676288156892</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +227,11 @@
           <url>file://$PROJECT_DIR$/src/BFS/EscapeFromMaze.java</url>
           <line>40</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DFS/DesertIsland.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,11 +1,14 @@
 package DFS;
 
+import BFS.Node;
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class DesertIsland {
+	//https://school.programmers.co.kr/learn/courses/30/lessons/154540
 
 	static class Solution {
 
@@ -13,52 +16,59 @@ public class DesertIsland {
 			List<Integer> resultList = new ArrayList<Integer>();
 
 //			3 ≤ maps[i]의 길이 ≤ 100
-			String[][] mapsArr = new String[100][100];
+			String[][] mapsArr = new String[6][6];
 
-			int asisY = maps.length;
-			int asisX = 0;
-			for (int i = 0; i < asisY; i++) {
+			int asisXX = maps.length;//4
+			int asisYY = 0;
+			for (int X = 0; X < asisXX; X++) {
 
-				String[] tempArr = maps[i].split("");
-				asisX = tempArr.length;
+				String[] rowArr = maps[X].split("");
+				asisYY = rowArr.length;//5
 
-				for (int j = 0; j < asisX; j++) {
-					mapsArr[i][j] = tempArr[j];
+				for (int Y = 0; Y < asisYY; Y++) {
+					mapsArr[X][Y] = rowArr[Y];
 
 				}
 			}
 
-			System.out.println(Arrays.deepToString(mapsArr));
-			System.out.println("asisY>> " + asisY);
-			System.out.println("asisX>> " + asisX);
+			System.out.println("이중 배열>> " + Arrays.deepToString(mapsArr));
+			System.out.println("asisXX>> " + asisXX);
+			System.out.println("asisYY>> " + asisYY);
 			// mapsArr를 이중 배열로 만들었으니 이제..DFS
 
-			int bank = 0;
+			int bread = 0;
 
-			for (int i = 0; i < asisY; i++) {
-				for (int j = 0; j < asisX; j++) {
+			for (int X = 0; X < asisXX; X++) {
+				for (int Y = 0; Y < asisYY; Y++) {
 					//DFS시작
 
-					int checkNum = dfs(i, j, asisY, asisX, mapsArr, bank);
+					Integer checkNum = dfs(X, Y, asisXX, asisYY, mapsArr, bread);
 
-					if(checkNum == 0){
+					if (checkNum != null && checkNum > 0) {
 						resultList.add(checkNum);
 					}
 
-					if(checkNum >= 1 ){
-						bank += checkNum;
-					}
-
-
 				}
 			}
 
-			int[] answer = {};
+			System.out.println("resultList>>> " + resultList);
+
+			// 오름차순
+			Collections.sort(resultList);
+
+			int[] answer = new int[resultList.size()];
+			int size = 0;
+
+			for (int temp : resultList) {
+
+				answer[size++] = temp;
+
+			}
 			return answer;
 		}
 
 
-		private static int dfs(int x, int y, int N, int M, String[][] mapsArr, int bank) {
+		private static Integer dfs(int x, int y, int N, int M, String[][] mapsArr, Integer savedBread) {
 
 			//범위에서 벗어나면 return null;
 			if (x <= -1 || x >= N || y <= -1 || y >= M) {// 범위를 벗어나면
@@ -70,11 +80,24 @@ public class DesertIsland {
 			if ("X".equals(cellValue)) {
 				return 0;
 
-			} else if (cellValue.isEmpty()) {
+			} else if (cellValue.isEmpty()) {// 크기를 쓸데 없이 크게 해놔서 그래
 				return 0;
 
 			} else {
-				return Integer.parseInt(cellValue);
+				// 현재 노드를 방문하지 않았다면 숫자 -> V로 변경
+				Integer bread = Integer.parseInt(cellValue);
+				mapsArr[x][y] = "X";
+				System.out.println("x> " + x + "     y> " + y);
+				// 나를 중심으로 상하좌우 체크한다
+				Integer a = dfs(x, y - 1, N, M, mapsArr, savedBread + bread);
+				Integer b = dfs(x, y + 1, N, M, mapsArr, savedBread + bread);
+				Integer c = dfs(x - 1, y, N, M, mapsArr, savedBread + bread);
+				Integer d = dfs(x + 1, y, N, M, mapsArr, savedBread + bread);
+
+				Integer rere = bread + a + b + c + d;
+				System.out.println("a + b + c + d>> " + rere);
+
+				return rere;
 				//값을 저장
 
 			}
@@ -95,7 +118,7 @@ public class DesertIsland {
 		String[] maps = {"X591X", "X1X5X", "X231X", "1XXX1"};
 		int[] res = desertIsland.solution(maps);
 
-		System.out.println(res);//[1, 1, 27]
+		System.out.println(Arrays.toString(res));//[1, 1, 27]
 
 
 	}
